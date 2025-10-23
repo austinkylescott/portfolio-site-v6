@@ -72,7 +72,7 @@ const items = [
     </template>
 
     <UPageLogos :marquee="{ pauseOnHover: true }" :items="items">
-      <template v-for="item in items" :key="item.label">
+      <template v-for="item in items" :key="item.alt">
         <UTooltip :text="item.alt" :delay-duration="300">
           <UIcon :name="item.src" class="size-14 shrink-0" />
         </UTooltip>
