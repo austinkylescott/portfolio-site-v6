@@ -10,8 +10,15 @@ useSeoMeta({
 });
 </script>
 <template>
-  <UPageBody>
-    <ContentRenderer v-if="page" :value="page" class="mx-auto" />
-    <div v-else>About Page Not Found</div>
-  </UPageBody>
+  <UPage>
+    <template #default>
+      <UPageBody>
+        <ContentRenderer v-if="page" :value="page" />
+        <div v-else>About Page Not Found</div>
+      </UPageBody>
+    </template>
+    <template v-if="page?.body?.toc?.links?.length" #left>
+      <UContentToc :title="page?.title" :links="page?.body?.toc?.links" />
+    </template>
+  </UPage>
 </template>
