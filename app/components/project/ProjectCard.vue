@@ -2,7 +2,7 @@
 import type { Project } from "~/data/projects";
 
 // You can keep or remove ui; default already has `pt-4 mt-auto`
-const ui = { footer: "w-full" };
+const ui = { header: "w-full", footer: "w-full" };
 
 defineProps<{ project: Project }>();
 </script>
@@ -14,7 +14,9 @@ defineProps<{ project: Project }>();
         v-if="project.thumbnail"
         :alt="`Thumbnail image for ${project.title}`"
         :src="project.thumbnail"
-        class="rounded-lg"
+        width="300"
+        height="200"
+        class="rounded-lg mx-auto origin-top"
       />
     </template>
 

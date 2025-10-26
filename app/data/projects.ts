@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     ],
     siteUrl: "https://zen-wiles-0cc089.netlify.app/",
     github: "https://github.com/austinkylescott/react-rest-api",
-    thumbnail: "/images/projectImages/project7/project7_thumb.png",
+    thumbnail: "/images/projectImages/project8/project8_thumb.png",
   },
   {
     title: "Full Stack Course Manager",
