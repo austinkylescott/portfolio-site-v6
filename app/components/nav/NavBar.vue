@@ -31,7 +31,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     <template #right>
       <UColorModeButton />
 
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
+      <UTooltip text="Open on GitHub">
         <UButton
           color="neutral"
           variant="ghost"

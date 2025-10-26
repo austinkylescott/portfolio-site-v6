@@ -1,4 +1,9 @@
 <script setup lang="ts"></script>
 <template>
-  <ProjectCard />
+  <UPage>
+    <UPageHeader title="Projects" />
+    <UPageBody>
+      <ProjectGrid />
+    </UPageBody>
+  </UPage>
 </template>

@@ -10,7 +10,7 @@ updated: 2025-10-22
 I’m a **front-end–focused full-stack developer**, **improv theater director**, and **creative technologist** based in **Rochester, NY**. I build modern, accessible, and maintainable UIs with **React/TypeScript** (and **Nuxt/Vue** on personal projects), and I co-own and run **The Focus Theater**, the home for Rochester’s improv community.
 
 ::tip{icon="i-lucide-sparkles"}
-**Currently**: rebuilding my portfolio with Nuxt UI, shipping an Improv Community Manager SaaS app, and prototyping a wrestling-themed monster-raising game inspired by _Monster Rancher_, _Digimon_, and _WWE_.
+**Currently**: rebuilding my portfolio with Nuxt UI, shipping an Improv Community Manager SaaS app, and prototyping a wrestling-themed "monster"-raising game inspired by _Monster Rancher_, _Digimon_, and _WWE_.
 ::
 
 ## My Path Into Development
@@ -29,7 +29,7 @@ I dove back in through **freeCodeCamp**, **Team Treehouse**, YouTube, podcasts, 
 
 ## Professional Growth
 
-During the pandemic, I joined the **Tampa Bay Times** as an Application Developer. Starting with microsites and legacy code maintenance, I quickly took on ownership of release management, occasionally covering daily stand-ups & stakeholder meetings, and large-scale product migrations.
+During the pandemic, I joined the **Tampa Bay Times** as an Application Developer, later becoming a Senior Developer at the company. Starting with microsites and legacy code maintenance, I quickly took on ownership of release management, occasionally covering daily stand-ups & stakeholder meetings, and large-scale product migrations.
 
 Over five years, I led or contributed to major initiatives including:
 

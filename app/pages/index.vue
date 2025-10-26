@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ButtonProps } from "@nuxt/ui";
+import { SKILLS } from "~/data/skills";
 
 const links = ref<ButtonProps[]>([
   {
@@ -12,46 +13,11 @@ const links = ref<ButtonProps[]>([
     label: "See projects",
     to: "/work",
     color: "neutral",
-    variant: "subtle",
-    leadingIcon: "i-lucide-code",
+    variant: "outline",
+    leadingIcon: "i-lucide-code-xml",
     trailingIcon: "i-lucide-arrow-right",
   },
 ]);
-
-const items = [
-  {
-    alt: "HTML5",
-    src: "vscode-icons:file-type-html",
-  },
-  {
-    alt: "CSS3",
-    src: "vscode-icons:file-type-css2",
-  },
-  {
-    alt: "JavaScript",
-    src: "vscode-icons:file-type-js-official",
-  },
-  {
-    alt: "SCSS",
-    src: "vscode-icons:file-type-scss",
-  },
-  {
-    alt: "React.js",
-    src: "vscode-icons:file-type-reactjs",
-  },
-  {
-    alt: "Next.js",
-    src: "vscode-icons:file-type-next",
-  },
-  {
-    alt: "Vue.js",
-    src: "vscode-icons:file-type-vue",
-  },
-  {
-    alt: "Nuxt.js",
-    src: "vscode-icons:file-type-nuxt",
-  },
-];
 </script>
 <template>
   <UPageHero
@@ -70,11 +36,10 @@ const items = [
         stacks (Next.js, Tanstack, Nuxt)
       </p>
     </template>
-
-    <UPageLogos :marquee="{ pauseOnHover: true }" :items="items">
-      <template v-for="item in items" :key="item.alt">
-        <UTooltip :text="item.alt" :delay-duration="300">
-          <UIcon :name="item.src" class="size-14 shrink-0" />
+    <UPageLogos :marquee="{ pauseOnHover: true }">
+      <template v-for="item in SKILLS" :key="item.name">
+        <UTooltip :text="item.name" :delay-duration="300">
+          <UIcon :name="item.icon" class="size-14 shrink-0" />
         </UTooltip>
       </template>
     </UPageLogos>
