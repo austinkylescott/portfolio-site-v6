@@ -11,7 +11,7 @@ const links = ref<ButtonProps[]>([
   },
   {
     label: "See projects",
-    to: "/work",
+    to: "/projects",
     color: "neutral",
     variant: "outline",
     leadingIcon: "i-lucide-code-xml",

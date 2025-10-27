@@ -35,6 +35,7 @@ const featured = computed(() =>
       <UPageGrid class="gap-6">
         <ProjectCard v-for="p in wip" :key="p.title" :project="p" />
       </UPageGrid>
+
       <h2 class="text-2xl font-bold mb-4">Archived Projects</h2>
       <UAlert
         title="These projects have been archived."
