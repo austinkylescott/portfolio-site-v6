@@ -1,15 +1,33 @@
 <script setup lang="ts">
 import type { Project } from "~/data/projects";
 
-// You can keep or remove ui; default already has `pt-4 mt-auto`
 const ui = { header: "w-full", footer: "w-full" };
 
 defineProps<{ project: Project }>();
+
+const statusLabel = (s?: Project["status"]) => {
+  if (s === "featured") return "Featured";
+  else if (s === "wip") return "In Progress";
+  else if (s === "archived") return "Archived";
+};
 </script>
 
 <template>
   <UPageCard :title="project.title" :ui="ui" spotlight>
     <template #header>
+      <UBadge
+        v-if="project.status"
+        variant="subtle"
+        :color="
+          project.status === 'archived'
+            ? 'neutral'
+            : project.status === 'wip'
+              ? 'warning'
+              : 'primary'
+        "
+        :label="statusLabel(project.status)"
+        class="mb-2"
+      />
       <NuxtImg
         v-if="project.thumbnail"
         :alt="`Thumbnail image for ${project.title}`"
@@ -32,7 +50,14 @@ defineProps<{ project: Project }>();
 
         <!-- Buttons row -->
         <div class="flex text-base justify-end gap-2">
+          <UTooltip
+            v-if="!project.siteUrl && project.status === 'archived'"
+            text="Archived demo not hosted"
+          >
+            <UButton label="Live Site" leading-icon="lucide:globe" disabled />
+          </UTooltip>
           <UButton
+            v-else-if="project.siteUrl"
             label="Live Site"
             leading-icon="lucide:globe"
             :to="project.siteUrl"

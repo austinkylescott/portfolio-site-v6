@@ -1,13 +1,17 @@
+import { accordion } from "#build/ui";
 import type { SkillName } from "./skills";
 
 export interface Project {
   title: string;
   description: string;
   skills: SkillName[];
-  siteUrl: string;
+  siteUrl?: string;
   github: string;
   thumbnail: string;
+  status: ProjectStatus;
 }
+
+export type ProjectStatus = "featured" | "archived" | "wip";
 
 export const PROJECTS: Project[] = [
   {
@@ -26,6 +30,26 @@ export const PROJECTS: Project[] = [
     siteUrl: "https://zen-wiles-0cc089.netlify.app/",
     github: "https://github.com/austinkylescott/react-rest-api",
     thumbnail: "/images/projectImages/project8/project8_thumb.png",
+    status: "featured",
+  },
+  {
+    title: "Theater Community Management Platform",
+    description:
+      "Theater toolkit: lineup builder, notifications, role-based permissions. Nuxt 4 + Supabase + Nuxt UI 4.",
+    skills: ["TypeScript", "Vue.js", "Nuxt.js", "Supabase", "Vercel"],
+    siteUrl: "https://zen-wiles-0cc089.netlify.app/",
+    github: "https://github.com/austinkylescott/",
+    thumbnail: "https://placehold.co/300x200",
+    status: "wip",
+  },
+  {
+    title: "Ringcycle",
+    description:
+      "Monster-raising loop with weekly schedule, evolution & stat systems, and tournament cadence.",
+    skills: ["Godot"],
+    github: "https://github.com/austinkylescott/",
+    thumbnail: "https://placehold.co/300x200",
+    status: "wip",
   },
   {
     title: "Full Stack Course Manager",
@@ -40,9 +64,10 @@ export const PROJECTS: Project[] = [
       "Netlify",
       "Heroku",
     ],
-    siteUrl: "https://zen-wiles-0cc089.netlify.app/",
+    // siteUrl: "https://zen-wiles-0cc089.netlify.app/",
     github: "https://github.com/austinkylescott/react-rest-api",
     thumbnail: "/images/projectImages/project7/project7_thumb.png",
+    status: "archived",
   },
   {
     title: "SQL Library Manager",
@@ -57,9 +82,10 @@ export const PROJECTS: Project[] = [
       "Express",
       "Heroku",
     ],
-    siteUrl: "https://fierce-crag-37811.herokuapp.com/books",
+    // siteUrl: "https://fierce-crag-37811.herokuapp.com/books",
     github: "https://github.com/austinkylescott/sql_library_manager-v1",
     thumbnail: "/images/projectImages/project6/project6_thumb.png",
+    status: "archived",
   },
   {
     title: "React Flickr Gallery",
@@ -69,6 +95,7 @@ export const PROJECTS: Project[] = [
     siteUrl: "https://ascott-react-gallery.netlify.app",
     github: "https://github.com/austinkylescott/react-gallery-app_v1",
     thumbnail: "/images/projectImages/project5/project5_thumb.png",
+    status: "archived",
   },
   {
     title: "Public API Requests",
@@ -79,6 +106,7 @@ export const PROJECTS: Project[] = [
       "https://austinkylescott.github.io/techdegree-project-5/public_api_request-v1",
     github: "https://github.com/austinkylescott/techdegree-project-5",
     thumbnail: "/images/projectImages/project4/project4_thumb.png",
+    status: "archived",
   },
   {
     title: "Phrase Hunter",
@@ -89,6 +117,7 @@ export const PROJECTS: Project[] = [
       "https://austinkylescott.github.io/techdegree-project-4/oop_game-v2",
     github: "https://github.com/austinkylescott/techdegree-project-4",
     thumbnail: "/images/projectImages/project3/project3_thumb.png",
+    status: "archived",
   },
   {
     title: "Interactive Registration Form",
@@ -98,6 +127,7 @@ export const PROJECTS: Project[] = [
       "https://austinkylescott.github.io/techdegree-project-3/interactive-form-v1",
     github: "https://github.com/austinkylescott/techdegree-project-3",
     thumbnail: "/images/projectImages/project2/project2_thumb.png",
+    status: "archived",
   },
   {
     title: "List Pagination",
@@ -107,6 +137,7 @@ export const PROJECTS: Project[] = [
       "https://austinkylescott.github.io/techdegree-project-2/list_pagination_and_filtering-v1",
     github: "https://github.com/austinkylescott/techdegree-project-2",
     thumbnail: "/images/projectImages/project1/project1_thumb.png",
+    status: "archived",
   },
   {
     title: "Random Quote Generator",
@@ -117,5 +148,6 @@ export const PROJECTS: Project[] = [
       "https://austinkylescott.github.io/techdegree-project-1/a_random_quote_generator-v1",
     github: "https://github.com/austinkylescott/techdegree-project-1",
     thumbnail: "/images/projectImages/project0/project0_thumb.png",
+    status: "archived",
   },
 ];

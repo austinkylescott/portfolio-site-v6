@@ -69,6 +69,10 @@ export const SKILLS = [
     icon: "devicon:heroku",
   },
   {
+    name: "Render",
+    icon: "simple-icons:render",
+  },
+  {
     name: "AWS",
     icon: "devicon:amazonwebservices",
   },
@@ -92,6 +96,10 @@ export const SKILLS = [
   {
     name: "Auth0",
     icon: "logos:auth0-icon",
+  },
+  {
+    name: "Godot",
+    icon: "devicon:godot",
   },
 ] as const satisfies ReadonlyArray<Skill>;
 
