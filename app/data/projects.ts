@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     description:
       "Theater toolkit: lineup builder, notifications, role-based permissions. Nuxt 4 + Supabase + Nuxt UI 4.",
     skills: ["TypeScript", "Vue.js", "Nuxt.js", "Supabase", "Vercel"],
-    siteUrl: "https://zen-wiles-0cc089.netlify.app/",
+    // siteUrl: "https://zen-wiles-0cc089.netlify.app/",
     github: "https://github.com/austinkylescott/",
     thumbnail: "https://placehold.co/300x200",
     status: "wip",

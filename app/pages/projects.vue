@@ -12,6 +12,7 @@ const featured = computed(() =>
 <template>
   <UPage>
     <UPageHeader title="Projects" />
+    <SectionsHireMe />
     <UPageBody>
       <h2 class="text-2xl font-bold mb-4">Featured Projects</h2>
       <UAlert

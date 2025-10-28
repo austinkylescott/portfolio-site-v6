@@ -30,12 +30,22 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <template #right>
       <UColorModeButton />
-
+      <UTooltip text="Download Resume">
+        <UButton
+          color="neutral"
+          variant="ghost"
+          href="/AustinScottResume.pdf"
+          external
+          target="_blank"
+          icon="i-lucide-file-text"
+          aria-label="Resume"
+        />
+      </UTooltip>
       <UTooltip text="Open on GitHub">
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://github.com/austinkylescott"
+          href="https://github.com/austinkylescott"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
