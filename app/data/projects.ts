@@ -1,4 +1,3 @@
-import { accordion } from "#build/ui";
 import type { SkillName } from "./skills";
 
 export interface Project {
@@ -18,17 +17,9 @@ export const PROJECTS: Project[] = [
     title: "My Portfolio Site",
     description:
       "New portfolio site built with some newer tech that wasn't as robust when I was starting out. Features a Vue/Nuxt site, leveraging a number of Nuxt modules for content and UI.",
-    skills: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "TypeScript",
-      "Vue.js",
-      "Nuxt.js",
-      "Vercel",
-    ],
-    siteUrl: "https://zen-wiles-0cc089.netlify.app/",
-    github: "https://github.com/austinkylescott/react-rest-api",
+    skills: ["HTML5", "CSS3", "TypeScript", "Vue.js", "Nuxt.js", "Vercel"],
+    siteUrl: "/",
+    github: "https://github.com/austinkylescott/portfolio-site-v6",
     thumbnail: "/images/projectImages/project8/project8_thumb.png",
     status: "featured",
   },

@@ -81,7 +81,9 @@ useHead({
             <li>
               Design systems (Nuxt UI, shadcn/ui) · Accessibility · Testing
             </li>
-            <li>Auth0/OAuth · Analytics · SEO · SSR/SSG · Edge deploys</li>
+            <li>
+              Auth0/OAuth · Analytics · SEO · SSR/SSG · Traditional/Headless CMS
+            </li>
           </ul>
         </div>
 

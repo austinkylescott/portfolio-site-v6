@@ -13,7 +13,12 @@ const statusLabel = (s?: Project["status"]) => {
 </script>
 
 <template>
-  <UPageCard :title="project.title" :ui="ui" spotlight>
+  <UPageCard
+    :title="project.title"
+    :ui="ui"
+    :description="project.description"
+    spotlight
+  >
     <template #header>
       <UBadge
         v-if="project.status"
@@ -38,10 +43,6 @@ const statusLabel = (s?: Project["status"]) => {
       />
     </template>
 
-    <template #description>
-      {{ project.description }}
-    </template>
-
     <template #footer>
       <div class="flex flex-col items-end gap-3">
         <span class="text-pretty font-semibold">Technology Used</span>
@@ -53,6 +54,12 @@ const statusLabel = (s?: Project["status"]) => {
           <UTooltip
             v-if="!project.siteUrl && project.status === 'archived'"
             text="Archived demo not hosted"
+          >
+            <UButton label="Live Site" leading-icon="lucide:globe" disabled />
+          </UTooltip>
+          <UTooltip
+            v-else-if="!project.siteUrl && project.status === 'wip'"
+            text="Coming soon!"
           >
             <UButton label="Live Site" leading-icon="lucide:globe" disabled />
           </UTooltip>

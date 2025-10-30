@@ -24,7 +24,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 <template>
   <UHeader>
-    <template #title> Austin Scott </template>
+    <template #title>Austin Scott</template>
 
     <UNavigationMenu :items="items" />
 

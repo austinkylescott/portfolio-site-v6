@@ -27,11 +27,11 @@ const links = ref<ButtonProps[]>([
 ]);
 
 const heroUi = {
-  container: "pt-10 sm:pt-10 sm:pb-10 lg:py-10",
+  container: "py-10 sm:pt-10 sm:pb-10 lg:py-10",
 };
 
 const logosUi = {
-  logos: "mt-0",
+  logos: "my-0",
 };
 </script>
 <template>
@@ -42,10 +42,10 @@ const logosUi = {
       <NuxtImg
         src="/images/businessprofile.jpeg"
         alt="Photo of Austin Scott"
-        width="1000"
-        height="1000"
+        width="1200"
+        height="1800"
         sizes="120px sm:140px md:160px lg:180px xl:200px"
-        class="h-full w-full object-cover"
+        class="h-full w-full object-cover object-[50%_20%]"
         format="webp"
         densities="x1 x2"
         placeholder
@@ -65,15 +65,15 @@ const logosUi = {
             >The&nbsp;Focus&nbsp;Theater</ULink
           >, based in Rochester, NY.
         </p>
-        <p>
-          Most recently, I spent five years at Tampa&nbsp;Bay&nbsp;Times as a
-          senior developer working on a legacy React codebase and implementing
-          3rd-party integrations.
+        <p class="mt-4">
+          Most recently, I spent five years with the Tampa&nbsp;Bay&nbsp;Times
+          as a senior developer working on a legacy React codebase, managing
+          releases, and implementing 3rd-party integrations.
         </p>
         <p class="mt-4">
-          I'm seeking remote or local hybrid Senior or Staff&nbsp;web
+          I'm seeking remote or local-hybrid Senior or Staff&nbsp;web
           engineering roles where I can keep growing— ideally on modern
-          React/Vue + TypeScript stacks (Next.js, Tanstack, Nuxt).
+          React/Vue + TypeScript stacks (Next.js, Nuxt, TanStack).
         </p>
       </template>
       <UPageLogos :ui="logosUi" :marquee="{ pauseOnHover: true }">

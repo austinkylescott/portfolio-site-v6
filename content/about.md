@@ -1,7 +1,7 @@
 ---
 title: "About Me – Austin Scott"
 description: "Front-end developer, improv director, and creative technologist in Rochester, NY."
-cover: "/images/about/cover.jpg"
+cover: "/public/images/businessprofile.jpeg"
 updated: 2025-10-22
 ---
 
@@ -10,7 +10,7 @@ updated: 2025-10-22
 I’m a **front-end–focused full-stack developer**, **improv theater director**, and **creative technologist** based in **Rochester, NY**. I build modern, accessible, and maintainable UIs with **React/TypeScript** (and **Nuxt/Vue** on personal projects), and I co-own and run **The Focus Theater**, the home for Rochester’s improv community.
 
 ::tip{icon="i-lucide-sparkles"}
-**Currently**: rebuilding my portfolio with Nuxt UI, shipping an Improv Community Manager SaaS app, and prototyping a wrestling-themed "monster"-raising game inspired by _Monster Rancher_, _Digimon_, and _WWE_.
+**Currently**: rebuilding my portfolio with Nuxt UI, shipping an improv theater community management SaaS app, and prototyping a wrestling-themed "monster"-raising game inspired by _Monster Rancher_, _Digimon_, and _WWE_.
 ::
 
 ## My Path Into Development
