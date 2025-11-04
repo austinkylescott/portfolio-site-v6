@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from "#imports";
-
 const props = defineProps<{
   location?: string;
   email?: string;
@@ -10,38 +8,6 @@ const props = defineProps<{
 const location = computed(() => props.location ?? "Rochester, NY");
 const email = computed(() => props.email ?? "austin.scott18+jobs.com");
 const resumeUrl = computed(() => props.resumePath ?? "/AustinScottResume.pdf");
-
-/** Optional: tiny SEO bump (structured data) */
-useHead({
-  htmlAttrs: {
-    lang: "en",
-  },
-  link: [
-    {
-      rel: "icon",
-      type: "image/png",
-      href: "/favicon.png",
-    },
-  ],
-  script: [
-    {
-      type: "application/ld+json",
-      // Minimal Person schema with contact + sameAs
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Person",
-        name: "Austin Scott",
-        jobTitle: "Senior Front-End Engineer",
-        email: `mailto:${email.value}`,
-        url: "https://www.austinscott.dev",
-        sameAs: [
-          "https://www.linkedin.com/in/austinkylescott",
-          "https://github.com/austinkylescott",
-        ],
-      }),
-    },
-  ],
-});
 </script>
 
 <template>
