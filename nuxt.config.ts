@@ -9,6 +9,20 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
+  image: {
+    provider: "vercel",
+    screens: {
+      placeholder: 10,
+      thumb: 300,
+      thumb2x: 600,
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      "2xl": 1536,
+    },
+  },
   modules: [
     "@nuxt/ui",
     "@nuxt/content",

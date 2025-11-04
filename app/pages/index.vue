@@ -44,11 +44,11 @@ const logosUi = {
         alt="Photo of Austin Scott"
         width="1200"
         height="1800"
-        sizes="120px sm:140px md:160px lg:180px xl:200px"
         class="h-full w-full object-cover object-[50%_20%]"
         format="webp"
         densities="x1 x2"
         placeholder
+        sizes="(min-width:1280px) 200px, (min-width:1024px) 180px, (min-width:768px) 160px, (min-width:640px) 140px, 120px"
       />
     </div>
 
