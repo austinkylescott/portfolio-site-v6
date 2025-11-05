@@ -42,6 +42,7 @@ export default defineNuxtConfig({
       posthogClientConfig: {
         session_recording: { maskAllInputs: true },
         capture_pageview: "history_change",
+        enable_heatmaps: true,
       },
       posthogPublicKey: import.meta.env.NUXT_PUBLIC_POSTHOG_KEY || undefined,
       posthogHost:
