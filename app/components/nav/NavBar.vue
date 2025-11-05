@@ -2,6 +2,13 @@
 import type { NavigationMenuItem } from "@nuxt/ui";
 
 const route = useRoute();
+const resumeHref = "/AustinScottResume.pdf";
+const { trackResumeDownload } = useResumeDownload();
+const handleResumeDownload = () =>
+  trackResumeDownload({
+    source: "nav-bar",
+    href: resumeHref,
+  });
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
@@ -34,11 +41,12 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UButton
           color="neutral"
           variant="ghost"
-          href="/AustinScottResume.pdf"
+          :href="resumeHref"
           external
           target="_blank"
           icon="i-lucide-file-text"
           aria-label="Resume"
+          @click="handleResumeDownload"
         />
       </UTooltip>
       <UTooltip text="Open on GitHub">

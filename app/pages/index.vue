@@ -2,6 +2,14 @@
 import type { ButtonProps } from "@nuxt/ui";
 import { SKILLS } from "~/data/skills";
 
+const resumeHref = "/AustinScottResume.pdf";
+const { trackResumeDownload } = useResumeDownload();
+const handleResumeLinkClick = () =>
+  trackResumeDownload({
+    source: "homepage-hero",
+    href: resumeHref,
+  });
+
 const links = ref<ButtonProps[]>([
   {
     label: "LinkedIn",
@@ -11,11 +19,12 @@ const links = ref<ButtonProps[]>([
   },
   {
     label: "Download Resume",
-    href: "/AustinScottResume.pdf",
+    href: resumeHref,
     external: true,
     target: "_blank",
     leadingIcon: "i-lucide-file-text",
     variant: "soft",
+    onClick: handleResumeLinkClick,
   },
   {
     label: "See projects",

@@ -98,6 +98,10 @@ export const SKILLS = [
     icon: "logos:auth0-icon",
   },
   {
+    name: "Posthog",
+    icon: "logos:posthog-icon",
+  },
+  {
     name: "Godot",
     icon: "devicon:godot",
   },

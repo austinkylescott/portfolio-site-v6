@@ -15,6 +15,12 @@ export default defineNuxtConfig({
       placeholder: 10,
       thumb: 300,
       thumb2x: 600,
+      avatar: 120,
+      avatarSm: 140,
+      avatarMd: 160,
+      avatarLg: 180,
+      avatarXl: 200,
+      avatar2x: 240,
       xs: 320,
       sm: 640,
       md: 768,
@@ -29,5 +35,13 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/image",
     "@nuxt/scripts",
+    "@posthog/nuxt",
   ],
+  runtimeConfig: {
+    public: {
+      posthogPublicKey: import.meta.env.NUXT_PUBLIC_POSTHOG_KEY || undefined,
+      posthogHost:
+        import.meta.env.NUXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+    },
+  },
 });

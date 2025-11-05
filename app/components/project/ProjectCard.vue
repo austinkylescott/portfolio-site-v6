@@ -39,6 +39,7 @@ const statusLabel = (s?: Project["status"]) => {
         :src="project.thumbnail"
         width="300"
         height="200"
+        :loading="project.status === 'archived' ? 'lazy' : undefined"
         class="rounded-lg mx-auto w-[300px] h-[200px] object-cover origin-top"
       />
     </template>

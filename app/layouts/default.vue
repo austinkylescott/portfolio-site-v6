@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const email = "austin.scott18+jobs.com";
+const defaultTitle = "Hire Austin Scott!";
+const defaultDescription =
+  "Front-end developer, improv director, and creative technologist in Rochester, NY.";
 
 useHead({
   htmlAttrs: {
@@ -8,8 +11,8 @@ useHead({
   link: [
     {
       rel: "icon",
-      type: "image/png",
-      href: "/favicon.png",
+      type: "image/x-icon",
+      href: "/favicon.ico",
     },
   ],
   script: [
@@ -33,9 +36,16 @@ useHead({
 });
 
 useSeoMeta({
-  title: "Hire Austin Scott!",
-  description:
-    "You need a do-it-all worker. Austin can do it all (or will learn very quickly!)",
+  title: defaultTitle,
+  description: defaultDescription,
+  ogTitle: defaultTitle,
+  ogDescription: defaultDescription,
+  ogImage: "/images/businessprofile.jpeg",
+  ogUrl: "austinscott.dev",
+  twitterTitle: defaultTitle,
+  twitterDescription: defaultDescription,
+  twitterImage: "/images/businessprofile.jpeg",
+  twitterCard: "summary_large_image",
 });
 </script>
 <template>

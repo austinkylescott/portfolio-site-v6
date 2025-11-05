@@ -8,6 +8,13 @@ const props = defineProps<{
 const location = computed(() => props.location ?? "Rochester, NY");
 const email = computed(() => props.email ?? "austin.scott18+jobs.com");
 const resumeUrl = computed(() => props.resumePath ?? "/AustinScottResume.pdf");
+const { trackResumeDownload } = useResumeDownload();
+
+const handleResumeDownload = () =>
+  trackResumeDownload({
+    source: "hire-me-section",
+    href: resumeUrl.value,
+  });
 </script>
 
 <template>
@@ -63,6 +70,7 @@ const resumeUrl = computed(() => props.resumePath ?? "/AustinScottResume.pdf");
               :href="resumeUrl"
               external
               target="_blank"
+              @click="handleResumeDownload"
             >
               Download Resume
             </UButton>
