@@ -1,9 +1,12 @@
 export const useResumeDownload = () => {
   const nuxtApp = useNuxtApp();
-  const posthog = process.client ? nuxtApp.$posthog?.() : null;
+  const posthog = import.meta.client ? nuxtApp.$posthog?.() : null;
 
-  const trackResumeDownload = (context?: { source?: string; href?: string }) => {
-    if (!process.client || !posthog) {
+  const trackResumeDownload = (context?: {
+    source?: string;
+    href?: string;
+  }) => {
+    if (!import.meta.client || !posthog) {
       return;
     }
 

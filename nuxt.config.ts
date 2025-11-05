@@ -39,6 +39,10 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
+      posthogClientConfig: {
+        session_recording: { maskAllInputs: true },
+        capture_pageview: "history_change",
+      },
       posthogPublicKey: import.meta.env.NUXT_PUBLIC_POSTHOG_KEY || undefined,
       posthogHost:
         import.meta.env.NUXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
