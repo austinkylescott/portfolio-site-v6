@@ -29,11 +29,5 @@
     "@iconify-json/logos": "^1.2.9",
     "@iconify-json/lucide": "^1.2.71",
     "@iconify-json/vscode-icons": "^1.2.32"
-  },
-  "overrides": {
-    "axios": "^1.13.0",
-    "@posthog/cli": {
-      "axios": "^1.13.0"
-    }
   }
 }
