@@ -34,19 +34,19 @@ export const PROJECTS: Project[] = [
   {
     title: "Theater Community Management Platform",
     description:
-      "Theater toolkit: lineup builder, notifications, role-based permissions. Nuxt 4 + Supabase + Nuxt UI 4.",
-    skills: ["TypeScript", "Vue.js", "Nuxt.js", "Supabase", "Vercel"],
-    // siteUrl: "https://zen-wiles-0cc089.netlify.app/",
-    github: "https://github.com/austinkylescott/",
+      "Theater toolkit: lineup builder, notifications, role-based permissions. Next.js, Shad/cn.",
+    skills: ["TypeScript", "React.js", "Next.js", "Tailwindcss", "Vercel"],
+    siteUrl: "https://theater-community-manager.vercel.app",
+    github: "https://github.com/austinkylescott/theater-community-manager",
     thumbnail: "https://placehold.co/300x200",
     status: "wip",
   },
   {
     title: "Ringcycle",
     description:
-      "Monster-raising loop with weekly schedule, evolution & stat systems, and tournament cadence.",
+      "Monster-raising loop with weekly schedule, evolution & stat systems, and tournament cadence. Inspired by Monster Rancher, WWE, and Digimon.",
     skills: ["Godot"],
-    github: "https://github.com/austinkylescott/",
+    github: "https://github.com/austinkylescott/Ringcycle",
     thumbnail: "https://placehold.co/300x200",
     status: "wip",
   },
