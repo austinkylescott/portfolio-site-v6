@@ -37,16 +37,14 @@ export default defineNuxtConfig({
     "@nuxt/scripts",
     "@posthog/nuxt",
   ],
-  runtimeConfig: {
-    public: {
-      posthogClientConfig: {
-        session_recording: { maskAllInputs: true },
-        capture_pageview: "history_change",
-        enable_heatmaps: true,
-      },
-      posthogPublicKey: import.meta.env.NUXT_PUBLIC_POSTHOG_KEY || undefined,
-      posthogHost:
-        import.meta.env.NUXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+  posthogConfig: {
+    publicKey: import.meta.env.NUXT_PUBLIC_POSTHOG_KEY,
+    host:
+      import.meta.env.NUXT_PUBLIC_POSTHOG_HOST || "https://us.i.posthog.com",
+    clientConfig: {
+      session_recording: { maskAllInputs: true },
+      capture_pageview: "history_change",
+      enable_heatmaps: true,
     },
   },
 });
