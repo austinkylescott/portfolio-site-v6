@@ -32,12 +32,12 @@ export const PROJECTS: Project[] = [
     status: "featured",
   },
   {
-    title: "Theater Community Management Platform",
+    title: "Stagecom",
     description:
-      "Theater toolkit: lineup builder, notifications, role-based permissions. Next.js, Shad/cn.",
-    skills: ["TypeScript", "React.js", "Next.js", "Tailwindcss", "Vercel"],
-    siteUrl: "https://theater-community-manager.vercel.app",
-    github: "https://github.com/austinkylescott/theater-community-manager",
+      "Stagecom is a theater community management platform. When complete, theaters will be able to manage shows, casts, and ticket sales.",
+    skills: ["TypeScript", "Vue.js", "Nuxt.js", "Supabase"],
+    siteUrl: "https://stagecom-omega.vercel.app",
+    github: "https://github.com/austinkylescott/stagecom",
     thumbnail: "https://placehold.co/300x200",
     status: "wip",
   },
