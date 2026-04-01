@@ -84,14 +84,10 @@ const logosUi = {
           engineering roles where I can keep growing— ideally on modern
           React/Vue + TypeScript stacks (Next.js, Nuxt, TanStack).
         </p>
+        <p class="mt-4">
+          Lately, I've been pushing into the world of agentic development and realizing what a force multiplier AI driven development can be in the hands of a high-level developer with strong product knowledge, stable workflows, and creative imagination.
+        </p>
       </template>
-      <UPageLogos :ui="logosUi" :marquee="{ pauseOnHover: true }">
-        <template v-for="item in SKILLS" :key="item.name">
-          <UTooltip :text="item.name" :delay-duration="300">
-            <UIcon :name="item.icon" class="size-14 shrink-0" />
-          </UTooltip>
-        </template>
-      </UPageLogos>
     </UPageHero>
     <SectionsHireMe />
   </UPageBody>
